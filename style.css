@@ -1,4 +1,49 @@
-/* Header and menu styling */
+/* ===========================
+
+Univerasl Stlying 
+
+==============================*/
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.container {
+    display: flex;
+    max-width: 1000px;
+    margin: 0 auto;
+    }
+
+h2 {
+    font-family: 'Merriweather', serif;
+    font-size: 24px;
+    padding: 10px;
+    max-width: 1000px;
+}
+
+p {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 16px;
+    padding: 10px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+
+}
+
+article, aside {
+    background-color: white;
+    margin: 25px;
+    max-width: 900px auto;
+    float: left;
+}
+
+/* ===========================
+
+Header and Menu Stlying 
+
+==============================*/
+
 header {
     max-width: 800px;
     height: 120 auto;
@@ -25,19 +70,9 @@ h1 {
 
 header > nav {
     display: inline-block;
-    margin-right: 60px;
-    margin-left: 60px;
+    margin: 0 60px;
 }
 
-.header_line {
-    top: 20px;
-    border: none;
-    height: 5px;
-    background: black;
-    margin-bottom: 12px;
-}
-
-/* Normal button */
 .about_button, .portfolio_button, .contact_button {
     background: #0021A5;
     color: white;
@@ -50,7 +85,6 @@ header > nav {
     text-align: center;
 }
 
-/* Hover over button */
 .about_button:hover, .portfolio_button:hover, .contact_button:hover {
     background: white;
     color: #0021A5;
@@ -61,41 +95,14 @@ header > nav {
     text-align: center;
 }
 
+/* ===========================
+
+Main Styling 
+
+==============================*/
+
 main {
     background-image: url("images/Screenshot 2023-06-01 at 9.48.08 PM.png");
-}
-
-/* Article styling */
-article {
-    background-color: white;
-    margin: 25px;
-    float: left;
-    max-width: 700px;
-}
-
-article > h2 {
-    font-family: 'Merriweather', serif;
-    font-size: 24px;
-    padding: 10px;
-    margin-top: 0px;
-    margin-bottom: 0px;
-}
-
-.about_line {
-    border: none;
-    height: 3px;
-    color: #0021A5;
-    background-color: #0021A5;
-    max-width: 630px;
-}
-
-p {
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: 16px;
-    padding: 10px;
-    margin-top: 0px;
-    margin-bottom: 0px;
-
 }
 
 article > img {
@@ -103,11 +110,15 @@ article > img {
     padding: 10px;
 }
 
-.container {
-    display: flex;
-    max-width: 1000px;
-    margin: 0 auto;
-    }
+.about_line {
+    border: none;
+    height: 3px;
+    color: #0021A5;
+    background-color: #0021A5;
+    width: 620px;
+    margin: 0 20px;
+    
+}
 
 /*clearfix*/
 main::after {
@@ -116,40 +127,33 @@ main::after {
     display: block
 }
 
-/* Aside styling */
+/* ===========================
 
-aside {
-    background-color: white;
-    margin: 25px;
-    width: 250px;
-    float: left;
-}
+Aside Styling
+
+==============================*/
 
 .connect_line {
     border: none;
     height: 3px;
     color: #0021A5;
     background-color: #0021A5;
-    max-width: 220px;
-}
-
-aside > h2 {
-    font-family: 'Merriweather', serif;
-    font-size: 24px;
-    padding: 10px;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    text-align: center;
+    width: 220px;
+    margin: 0 20px;
+    
 }
 
 aside > p {
     padding: 10px;
-    margin-top: 0px;
-    margin-bottom: 0px;
     text-align: center;
 }
 
-/* Footer styling */
+/* ===========================
+
+Footer Styling
+
+==============================*/
+
 footer {
     background-color: #FA4616;
     color: white;
